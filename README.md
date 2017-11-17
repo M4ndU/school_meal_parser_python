@@ -13,6 +13,7 @@ School_Meal_Parser_Python
 
 사용 예시
 ---------
+소스:
 <pre><code>
   from parser import*
   
@@ -22,6 +23,14 @@ School_Meal_Parser_Python
   meal = get_diet(2, "2017.11.17", 4) #중식, 2017년 11월 17일, 금요일
   print(meal)
 
+</code></pre>
+출력:
+<pre><code>
+  비빔찜닭덮밥
+  순두부맑은탕
+  퐁듀찰도그볼
+  포기김치
+  씨리얼요거트
 </code></pre>
 
 활용 예제: [디스코드_봇](https://github.com/M4ndU/inhun_discord_bot2), [카카오톡_봇](https://github.com/M4ndU/inhun_kakao_api2)
