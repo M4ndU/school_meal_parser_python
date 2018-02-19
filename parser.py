@@ -46,5 +46,5 @@ def get_diet(code, ymd, weekday):
             element = element.replace('.', '')
             element = re.sub(r"\d", "", element)
         except:
-            element = ""
+            element = " "
     return element
