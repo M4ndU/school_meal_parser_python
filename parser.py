@@ -14,7 +14,7 @@ def get_html(url):
 def get_diet(code, ymd, weekday):
     schMmealScCode = code #int 1조식2중식3석식
     schYmd = ymd #str 요청할 날짜 ex:"2017.11.17"
-    if weekday == 6: #일요일 버림
+    if weekday == 5 or weekday == 6: #토요일,일요일 버림
         element = " "
     else:
         num = weekday + 1 #int 요청할 날짜의 요일 0월1화2수3목4금5토6일 파싱한 데이터의 배열이 일요일부터 시작되므로 1을 더해줍니다.
