@@ -30,7 +30,6 @@ def get_diet(code, ymd, weekday):
         soup = BeautifulSoup(html, 'html.parser')
         element_data = soup.find_all("tr")
         element_data = element_data[2].find_all('td')
-        element = "나이스 홈페이지에 문제가 있습니다. 나중에 다시 시도해주세요." #사이트에 문제가 있을 경우 출력
         try:
             element = str(element_data[num])
 
